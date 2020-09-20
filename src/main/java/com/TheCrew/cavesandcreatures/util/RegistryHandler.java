@@ -3,6 +3,7 @@ package com.TheCrew.cavesandcreatures.util;
 import com.TheCrew.cavesandcreatures.Main;
 import com.TheCrew.cavesandcreatures.blocks.BlockBase;
 import com.TheCrew.cavesandcreatures.blocks.BlockItemBase;
+import com.TheCrew.cavesandcreatures.blocks.EtheralGemOre;
 import com.TheCrew.cavesandcreatures.blocks.FaeriteOre;
 import com.TheCrew.cavesandcreatures.items.ItemBase;
 import com.TheCrew.cavesandcreatures.items.Pickaxe;
@@ -38,6 +39,11 @@ public class RegistryHandler
     public static final RegistryObject<Item> FAERITE_SWORD = ITEMS.register("faerite_sword", ItemBase::new);
     public static final RegistryObject<Item> FAERITE_AXE = ITEMS.register("faerite_axe", ItemBase::new);
     public static final RegistryObject<Item> FAERITE_HOE = ITEMS.register("faerite_hoe", ItemBase::new);
+    public static final RegistryObject<Item> ETHERAL_GEM_SHARD = ITEMS.register("etheral_gem_shard", ItemBase::new);
+    public static final RegistryObject<Item> FEYWILD_RUNE = ITEMS.register("feywild_rune", ItemBase::new);
+
+
+
 
 
 
@@ -50,6 +56,7 @@ public class RegistryHandler
     public static final RegistryObject<Block> CRACKED_AGED_STONE_BRICK = BLOCKS.register("cracked_aged_stone_brick", BlockBase::new);
     public static final RegistryObject<Block> MELTED_AGED_STONE_BRICK = BLOCKS.register("melted_aged_stone_brick", BlockBase::new);
     public static final RegistryObject<Block> REINFORCED_OBSIDIAN = BLOCKS.register("reinforced_obsidian", BlockBase::new);
+    public static final RegistryObject<Block> ETHERAL_GEM_ORE = BLOCKS.register("etheral_gem_ore", EtheralGemOre::new);
 
 
     //Block Items
@@ -58,5 +65,5 @@ public class RegistryHandler
     public static final RegistryObject<Item> CRACKED_AGED_STONE_BRICK_ITEM = ITEMS.register("cracked_aged_stone_brick", () -> new BlockItemBase(CRACKED_AGED_STONE_BRICK.get()));
     public static final RegistryObject<Item> MELTED_AGED_STONE_BRICK_ITEM = ITEMS.register("melted_aged_stone_brick", () -> new BlockItemBase(MELTED_AGED_STONE_BRICK.get()));
     public static final RegistryObject<Item> REINFORCED_OBSIDIAN_ITEM = ITEMS.register("reinforced_obsidian", () -> new BlockItemBase(REINFORCED_OBSIDIAN.get()));
-
+    public static final RegistryObject<Item> ETHERAL_GEM_ORE_ITEM = ITEMS.register("etheral_gem_ore", () -> new BlockItemBase(ETHERAL_GEM_ORE.get()));
 }
