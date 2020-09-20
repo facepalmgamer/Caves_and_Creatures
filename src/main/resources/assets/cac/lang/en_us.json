@@ -1,0 +1,13 @@
+{
+  "item.cac.faerite_ingot": "Faerite Ingot",
+  "item.cac.faerite_pickaxe": "Faerite Pickaxe",
+  "item.cac.obsidian_ingot": "Obsidian Ingot",
+  "item.cac.oblivion_orb": "Oblivion Orb",
+  "block.cac.faerite_ore": "Faerite Ore",
+  "block.cac.aged_stone_brick": "Aged Stone Brick",
+  "block.cac.cracked_aged_stone_brick": "Cracked Aged Stone Brick",
+  "block.cac.melted_aged_stone_brick": "Melted Aged Stone Brick",
+  "block.cac.reinforced_obsidian": "Reinforced Obsidian",
+  "itemGroup.cac_tab": "Caves and Creatures"
+
+}
