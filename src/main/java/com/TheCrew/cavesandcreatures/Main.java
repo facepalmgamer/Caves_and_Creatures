@@ -38,7 +38,7 @@ public class Main
     {
     }
 
-    public static final ItemGroup TAB = new ItemGroup("Caves and Creatures")
+    public static final ItemGroup TAB = new ItemGroup("cac_tab")
     {
         @Override
         public ItemStack createIcon() {
