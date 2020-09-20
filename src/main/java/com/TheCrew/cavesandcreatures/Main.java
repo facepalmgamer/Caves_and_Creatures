@@ -1,5 +1,8 @@
 package com.TheCrew.cavesandcreatures;
 
+import com.TheCrew.cavesandcreatures.util.RegistryHandler;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -22,6 +25,8 @@ public class Main
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+        RegistryHandler.init();
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -33,5 +38,12 @@ public class Main
     {
     }
 
+    public static final ItemGroup TAB = new ItemGroup("Caves and Creatures")
+    {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.OBLIVION_ORB.get());
+        }
+    };
 
 }
