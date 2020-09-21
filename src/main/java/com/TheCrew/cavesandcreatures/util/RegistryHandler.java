@@ -6,9 +6,9 @@ import com.TheCrew.cavesandcreatures.blocks.BlockItemBase;
 import com.TheCrew.cavesandcreatures.blocks.EtherealGemOre;
 import com.TheCrew.cavesandcreatures.blocks.FaeriteOre;
 import com.TheCrew.cavesandcreatures.items.ItemBase;
-import com.TheCrew.cavesandcreatures.items.Pickaxe;
+import com.TheCrew.cavesandcreatures.tools.ModItemTier;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,17 +28,22 @@ public class RegistryHandler
 
     //Items
     public static final RegistryObject<Item> FAERITE_INGOT = ITEMS.register("faerite_ingot", ItemBase::new);
-    public static final RegistryObject<Item> FAERITE_PICKAXE = ITEMS.register("faerite_pickaxe", Pickaxe::new);
     public static final RegistryObject<Item> OBSIDIAN_INGOT = ITEMS.register("obsidian_ingot", ItemBase::new);
     public static final RegistryObject<Item> OBLIVION_ORB = ITEMS.register("oblivion_orb", ItemBase::new);
-    public static final RegistryObject<Item> FAERITE_SHOVEL = ITEMS.register("faerite_shovel", ItemBase::new);
-    public static final RegistryObject<Item> FAERITE_SWORD = ITEMS.register("faerite_sword", ItemBase::new);
-    public static final RegistryObject<Item> FAERITE_AXE = ITEMS.register("faerite_axe", ItemBase::new);
-    public static final RegistryObject<Item> FAERITE_HOE = ITEMS.register("faerite_hoe", ItemBase::new);
     public static final RegistryObject<Item> ETHEREAL_GEM_SHARD = ITEMS.register("ethereal_gem_shard", ItemBase::new);
     public static final RegistryObject<Item> FEYWILD_RUNE = ITEMS.register("feywild_rune", ItemBase::new);
 
-
+    //Tools
+    public static final RegistryObject<PickaxeItem> FAERITE_PICKAXE = ITEMS.register("faerite_pickaxe", () ->
+            new PickaxeItem(ModItemTier.FAERITE, 1, -2.8f, new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<ShovelItem> FAERITE_SHOVEL = ITEMS.register("faerite_shovel", () ->
+            new ShovelItem(ModItemTier.FAERITE, 1f, -3f, new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<SwordItem> FAERITE_SWORD = ITEMS.register("faerite_sword", () ->
+            new SwordItem(ModItemTier.FAERITE, 3, -2.4f, new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<AxeItem> FAERITE_AXE = ITEMS.register("faerite_axe", () ->
+            new AxeItem(ModItemTier.FAERITE, 5.5f, -3f, new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<HoeItem> FAERITE_HOE = ITEMS.register("faerite_hoe", () ->
+            new HoeItem(ModItemTier.FAERITE, -3, 0f, new Item.Properties().group(Main.TAB)));
 
 
 
