@@ -1,6 +1,6 @@
 {
 	"parent": "block/cube_all",
 	"textures" : {
-		"all": "cac:blocks/etheral_gem_ore"
+		"all": "cac:blocks/ethereal_gem_ore"
 	}
 }

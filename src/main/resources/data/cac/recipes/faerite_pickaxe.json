@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "fff",
+    " s ",
+    " s "
+  ],
+  "key":
+  {
+    "f":
+    {
+      "item": "cac:faerite_ingot"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "cac:faerite_pickaxe",
+    "count": 1
+  }
+}

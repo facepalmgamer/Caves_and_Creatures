@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cac:aged_stone_brick"
+    },
+    {
+      "item": "cac:aged_stone_brick"
+    },
+    {
+      "item": "cac:aged_stone_brick"
+    },
+    {
+      "item": "cac:aged_stone_brick"
+    },
+    {
+      "item": "cac:aged_stone_brick"
+    },
+    {
+      "item": "minecraft:lava_bucket"
+    }
+  ],
+  "result":
+  {
+    "item": "cac:melted_aged_stone_brick",
+    "count": 5
+  }
+}

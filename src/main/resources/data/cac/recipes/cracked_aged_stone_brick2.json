@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cracked_stone_bricks"
+    },
+    {
+      "item": "cac:oblivion_orb"
+    }
+  ],
+  "result":
+  {
+    "item": "cac:cracked_aged_stone_brick",
+    "count": 1
+  }
+}

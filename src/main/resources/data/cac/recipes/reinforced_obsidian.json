@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "odo",
+    "dod",
+    "odo"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "item": "cac:obsidian_ingot"
+    },
+    "d":
+    {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result":
+  {
+    "item": "cac:reinforced_obsidian",
+    "count": 1
+  }
+}

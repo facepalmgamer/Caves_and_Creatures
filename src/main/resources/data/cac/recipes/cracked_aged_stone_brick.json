@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cac:aged_stone_brick"
+  },
+  "result": "cac:cracked_aged_stone_brick",
+  "experience": 0.2,
+  "cookingtime": 400
+}

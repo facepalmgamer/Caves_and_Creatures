@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures" : {
-		"layer0": "cac:items/etheral_gem_shard"
+		"layer0": "cac:items/ethereal_gem_shard"
 	}
 }
