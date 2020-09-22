@@ -9,7 +9,7 @@ public class FaeriteOre extends Block
 {
     public FaeriteOre( ) {
         super(Block.Properties.create(Material.ROCK)
-                .harvestLevel(3)
+                .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
                 .hardnessAndResistance(7.0f,7.0f)
                 .sound(SoundType.METAL)
