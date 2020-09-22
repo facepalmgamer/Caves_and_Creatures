@@ -1,6 +1,9 @@
 package com.TheCrew.cavesandcreatures;
 
-import com.TheCrew.cavesandcreatures.util.RegistryHandler;
+import com.TheCrew.cavesandcreatures.util.BlockHandler;
+import com.TheCrew.cavesandcreatures.util.FoodHandler;
+import com.TheCrew.cavesandcreatures.util.ItemHandler;
+import com.TheCrew.cavesandcreatures.util.ToolHandler;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,7 +26,10 @@ public class Main
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.init();
+        BlockHandler.init();
+        FoodHandler.init();
+        ItemHandler.init();
+        ToolHandler.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -41,7 +47,7 @@ public class Main
     {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.OBLIVION_ORB.get());
+            return new ItemStack(ItemHandler.OBLIVION_ORB.get());
         }
     };
 

@@ -1,7 +1,7 @@
 package com.TheCrew.cavesandcreatures.armor;
 
 import com.TheCrew.cavesandcreatures.Main;
-import com.TheCrew.cavesandcreatures.util.RegistryHandler;
+import com.TheCrew.cavesandcreatures.util.ItemHandler;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -14,10 +14,11 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial
 {
-    FAERITE(Main.MOD_ID + "faerite", 26, new int[] { 3, 5, 7, 2}, 16, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.2f, () ->
-    {return Ingredient.fromItems(RegistryHandler.FAERITE_INGOT.get());},
+    FAERITE(Main.MOD_ID + ":faerite", 26, new int[] { 3, 5, 7, 2}, 16, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.2f, () ->
+    {return Ingredient.fromItems(ItemHandler.FAERITE_INGOT.get());},
             0f
     );
+
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] { 11, 16, 15, 13};
     private final String name;

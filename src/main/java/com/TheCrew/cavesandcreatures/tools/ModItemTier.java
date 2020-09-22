@@ -1,6 +1,6 @@
 package com.TheCrew.cavesandcreatures.tools;
 
-import com.TheCrew.cavesandcreatures.util.RegistryHandler;
+import com.TheCrew.cavesandcreatures.util.ItemHandler;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public enum ModItemTier implements IItemTier
 {
     FAERITE(2, 800, 8.0f, 2.5f, 14, () ->
-            {return Ingredient.fromItems(RegistryHandler.FAERITE_INGOT.get());}
+            {return Ingredient.fromItems(ItemHandler.FAERITE_INGOT.get());}
             );
 
     private final int harvestLevel;

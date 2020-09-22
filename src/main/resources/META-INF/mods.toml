@@ -10,7 +10,7 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 
 modId="cac" #mandatory
 
-version="1.16.2-1.0.7" #mandatory
+version="1.16.2-1.0.8" #mandatory
 
 displayName="Caves and Creatures" #mandatory
 
