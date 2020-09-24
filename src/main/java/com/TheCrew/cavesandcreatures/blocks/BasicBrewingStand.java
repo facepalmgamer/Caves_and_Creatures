@@ -82,7 +82,7 @@ public class BasicBrewingStand extends Block {
             Block.makeCuboidShape(4, 4, 5, 10, 4, 6),
             Block.makeCuboidShape(5, 1, 12, 8, 2, 15),
             Block.makeCuboidShape(5, 1, 1, 8, 2, 4),
-            Block.makeCuboidShape(2, 1, 2, 4, 6, 12),
+            Block.makeCuboidShape(2, 1, 3, 4, 6, 13),
             Block.makeCuboidShape(4, 2, 9, 5, 4, 10),
             Block.makeCuboidShape(6, 2, 9, 7, 4, 10),
             Block.makeCuboidShape(8, 2, 9, 9, 4, 10),
