@@ -41,7 +41,7 @@ public class BlockHandler {
     public static final RegistryObject<Block> REINFORCED_OBSIDIAN = BLOCKS.register("reinforced_obsidian", ()-> new Block(AbstractBlock.Properties.create(Material.ROCK)
             .harvestTool(ToolType.PICKAXE)
             .harvestLevel(3)
-            .hardnessAndResistance(100f,2400f)
+            .hardnessAndResistance(100f,3600000f)
     ));
     public static final RegistryObject<Block> ETHEREAL_GEM_ORE = BLOCKS.register("ethereal_gem_ore", ()-> new Block(AbstractBlock.Properties.create(Material.ROCK)
             .harvestLevel(3)

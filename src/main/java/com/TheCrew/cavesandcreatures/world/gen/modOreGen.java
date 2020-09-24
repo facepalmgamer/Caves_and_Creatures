@@ -30,15 +30,20 @@ public class modOreGen
             if (biome.getCategory() == Biome.Category.NETHER)
             {
                 genOre(biome, 15, 8, 5, 80,  OreFeatureConfig.FillerBlockType.NETHERRACK, BlockHandler.ETHEREAL_GEM_ORE.get().getDefaultState(), 8);
+                genOre(biome, 15, 8, 5, 80,  OreFeatureConfig.FillerBlockType.NETHERRACK, BlockHandler.FAERITE_ORE.get().getDefaultState(), 8);
+
             }
             else if (biome.getCategory() == Biome.Category.THEEND)
             {
                 genOre(biome, 15, 8, 5, 50,  END_STONE, BlockHandler.ETHEREAL_GEM_ORE.get().getDefaultState(), 8);
+                genOre(biome, 15, 8, 5, 50,  END_STONE, BlockHandler.FAERITE_ORE.get().getDefaultState(), 8);
 
             }
             else
             {
                 genOre(biome, 15, 8, 5, 50,  OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockHandler.ETHEREAL_GEM_ORE.get().getDefaultState(), 8);
+                genOre(biome, 15, 8, 5, 50,  OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockHandler.FAERITE_ORE.get().getDefaultState(), 8);
+
             }
         }
     }
