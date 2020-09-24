@@ -1,4 +1,4 @@
-package com.TheCrew.cavesandcreatures.armor;
+package com.TheCrew.cavesandcreatures.enums;
 
 import com.TheCrew.cavesandcreatures.Main;
 import com.TheCrew.cavesandcreatures.util.ItemHandler;
