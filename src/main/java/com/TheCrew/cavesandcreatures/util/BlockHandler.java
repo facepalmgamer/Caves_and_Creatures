@@ -1,6 +1,7 @@
 package com.TheCrew.cavesandcreatures.util;
 
 import com.TheCrew.cavesandcreatures.Main;
+import com.TheCrew.cavesandcreatures.blocks.BasicBrewingStand;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -35,6 +36,7 @@ public class BlockHandler {
             .harvestLevel(1)
             .harvestTool(ToolType.PICKAXE)
             .hardnessAndResistance(1.5f,6.0f)
+            .setLightLevel((BlockState) -> 12)
     ));
     public static final RegistryObject<Block> REINFORCED_OBSIDIAN = BLOCKS.register("reinforced_obsidian", ()-> new Block(AbstractBlock.Properties.create(Material.ROCK)
             .harvestTool(ToolType.PICKAXE)
@@ -47,6 +49,8 @@ public class BlockHandler {
             .hardnessAndResistance(7.0f,7.0f)
     ));
 
+    //custom Blocks
+    public static final RegistryObject<Block> BASIC_BREWING_STAND = BLOCKS.register("basic_brewing_stand", BasicBrewingStand::new );
 
 
     //Block Items
@@ -56,6 +60,7 @@ public class BlockHandler {
     public static final RegistryObject<Item> MELTED_AGED_STONE_BRICK_ITEM = ITEMS.register("melted_aged_stone_brick", () -> new BlockItem(MELTED_AGED_STONE_BRICK.get(),new Item.Properties().group(Main.TAB)));
     public static final RegistryObject<Item> REINFORCED_OBSIDIAN_ITEM = ITEMS.register("reinforced_obsidian", () -> new BlockItem(REINFORCED_OBSIDIAN.get(),new Item.Properties().group(Main.TAB)));
     public static final RegistryObject<Item> ETHEREAL_GEM_ORE_ITEM = ITEMS.register("ethereal_gem_ore", () -> new BlockItem(ETHEREAL_GEM_ORE.get(),new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> BASIC_BREWING_STAND_ITEM = ITEMS.register("basic_brewing_stand", () -> new BlockItem(BASIC_BREWING_STAND.get(),new Item.Properties().group(Main.TAB)));
 
 
 }

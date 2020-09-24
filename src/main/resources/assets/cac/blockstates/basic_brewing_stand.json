@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "cac:block/basic_brewing_stand" },
+    "facing=south": { "model": "cac:block/basic_brewing_stand", "y":  180},
+    "facing=west": { "model": "cac:block/basic_brewing_stand", "y":  270},
+    "facing=east": { "model": "cac:block/basic_brewing_stand", "y":  90}
+  }
+}
