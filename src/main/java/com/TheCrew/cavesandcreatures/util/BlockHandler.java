@@ -1,15 +1,11 @@
 package com.TheCrew.cavesandcreatures.util;
 
 import com.TheCrew.cavesandcreatures.Main;
-import com.TheCrew.cavesandcreatures.blocks.BlockBase;
-import com.TheCrew.cavesandcreatures.blocks.BlockItemBase;
-import com.TheCrew.cavesandcreatures.blocks.EtherealGemOre;
-import com.TheCrew.cavesandcreatures.blocks.FaeriteOre;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
@@ -29,11 +25,22 @@ public class BlockHandler {
     }
 
     //Blocks
-    public static final RegistryObject<Block> FAERITE_ORE = BLOCKS.register("faerite_ore", FaeriteOre::new);
-    public static final RegistryObject<Block> AGED_STONE_BRICK = BLOCKS.register("aged_stone_brick", BlockBase::new);
-    public static final RegistryObject<Block> CRACKED_AGED_STONE_BRICK = BLOCKS.register("cracked_aged_stone_brick", BlockBase::new);
-    public static final RegistryObject<Block> MELTED_AGED_STONE_BRICK = BLOCKS.register("melted_aged_stone_brick", BlockBase::new);
-    public static final RegistryObject<Block> REINFORCED_OBSIDIAN = BLOCKS.register("reinforced_obsidian", BlockBase::new);
+    public static final RegistryObject<Block> FAERITE_ORE = BLOCKS.register("faerite_ore",()-> new Block(AbstractBlock.Properties.create(Material.ROCK)
+            .harvestLevel(1)
+            .harvestTool(ToolType.PICKAXE)
+            .hardnessAndResistance(7.0f,7.0f)));
+    public static final RegistryObject<Block> AGED_STONE_BRICK = BLOCKS.register("aged_stone_brick", ()-> new Block(AbstractBlock.Properties.from(Blocks.STONE_BRICKS)));
+    public static final RegistryObject<Block> CRACKED_AGED_STONE_BRICK = BLOCKS.register("cracked_aged_stone_brick", ()-> new Block(AbstractBlock.Properties.from(Blocks.CRACKED_STONE_BRICKS)));
+    public static final RegistryObject<Block> MELTED_AGED_STONE_BRICK = BLOCKS.register("melted_aged_stone_brick", ()-> new Block(AbstractBlock.Properties.create(Material.ROCK)
+            .harvestLevel(1)
+            .harvestTool(ToolType.PICKAXE)
+            .hardnessAndResistance(1.5f,6.0f)
+    ));
+    public static final RegistryObject<Block> REINFORCED_OBSIDIAN = BLOCKS.register("reinforced_obsidian", ()-> new Block(AbstractBlock.Properties.create(Material.ROCK)
+            .harvestTool(ToolType.PICKAXE)
+            .harvestLevel(3)
+            .hardnessAndResistance(100f,2400f)
+    ));
     public static final RegistryObject<Block> ETHEREAL_GEM_ORE = BLOCKS.register("ethereal_gem_ore", ()-> new Block(AbstractBlock.Properties.create(Material.ROCK)
             .harvestLevel(3)
             .harvestTool(ToolType.PICKAXE)
@@ -43,12 +50,12 @@ public class BlockHandler {
 
 
     //Block Items
-    public static final RegistryObject<Item> FAERITE_ORE_ITEM = ITEMS.register("faerite_ore", () -> new BlockItemBase(FAERITE_ORE.get()));
-    public static final RegistryObject<Item> AGED_STONE_BRICK_ITEM = ITEMS.register("aged_stone_brick", () -> new BlockItemBase(AGED_STONE_BRICK.get()));
-    public static final RegistryObject<Item> CRACKED_AGED_STONE_BRICK_ITEM = ITEMS.register("cracked_aged_stone_brick", () -> new BlockItemBase(CRACKED_AGED_STONE_BRICK.get()));
-    public static final RegistryObject<Item> MELTED_AGED_STONE_BRICK_ITEM = ITEMS.register("melted_aged_stone_brick", () -> new BlockItemBase(MELTED_AGED_STONE_BRICK.get()));
-    public static final RegistryObject<Item> REINFORCED_OBSIDIAN_ITEM = ITEMS.register("reinforced_obsidian", () -> new BlockItemBase(REINFORCED_OBSIDIAN.get()));
-    public static final RegistryObject<Item> ETHEREAL_GEM_ORE_ITEM = ITEMS.register("ethereal_gem_ore", () -> new BlockItemBase(ETHEREAL_GEM_ORE.get()));
+    public static final RegistryObject<Item> FRITE_ORE_ITEM = ITEMS.register("faerite_ore", ()-> new BlockItem(FAERITE_ORE.get(), new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> AGED_STONE_BRICK_ITEM = ITEMS.register("aged_stone_brick", () -> new BlockItem(AGED_STONE_BRICK.get(),new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> CRACKED_AGED_STONE_BRICK_ITEM = ITEMS.register("cracked_aged_stone_brick", () -> new BlockItem(CRACKED_AGED_STONE_BRICK.get(),new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> MELTED_AGED_STONE_BRICK_ITEM = ITEMS.register("melted_aged_stone_brick", () -> new BlockItem(MELTED_AGED_STONE_BRICK.get(),new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> REINFORCED_OBSIDIAN_ITEM = ITEMS.register("reinforced_obsidian", () -> new BlockItem(REINFORCED_OBSIDIAN.get(),new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> ETHEREAL_GEM_ORE_ITEM = ITEMS.register("ethereal_gem_ore", () -> new BlockItem(ETHEREAL_GEM_ORE.get(),new Item.Properties().group(Main.TAB)));
 
 
 }

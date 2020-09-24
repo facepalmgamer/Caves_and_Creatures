@@ -21,5 +21,7 @@ public class ItemHandler {
     public static final RegistryObject<Item> OBLIVION_ORB = ITEMS.register("oblivion_orb", ()->new Item(new Item.Properties().group(Main.TAB)));
     public static final RegistryObject<Item> ETHEREAL_GEM_SHARD = ITEMS.register("ethereal_gem_shard", ()->new Item(new Item.Properties().group(Main.TAB)));
     public static final RegistryObject<Item> FEYWILD_RUNE = ITEMS.register("feywild_rune", ()->new Item(new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> BURNER = ITEMS.register("burner", ()->new Item(new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> POTION_CAGE = ITEMS.register("potion_cage", ()->new Item(new Item.Properties().group(Main.TAB)));
 
 }

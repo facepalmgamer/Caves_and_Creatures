@@ -1,7 +1,6 @@
 package com.TheCrew.cavesandcreatures.util;
 
 import com.TheCrew.cavesandcreatures.Main;
-import com.TheCrew.cavesandcreatures.items.AgedApple;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
