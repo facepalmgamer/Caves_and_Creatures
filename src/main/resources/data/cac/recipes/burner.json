@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "igi"
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "g":
+    {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result":
+  {
+    "item": "cac:burner",
+    "count": 1
+  }
+}
