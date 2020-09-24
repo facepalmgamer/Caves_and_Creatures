@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "f f",
+    "fff",
+    "fff"
+  ],
+  "key":
+  {
+    "f":
+    {
+      "item": "cac:faerite_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "cac:faerite_chestplate",
+    "count": 1
+  }
+}

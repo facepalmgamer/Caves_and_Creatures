@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "fff",
+    "bcb",
+    "sss"
+  ],
+  "key":
+  {
+    "f":
+    {
+      "item": "minecraft:oak_planks"
+    },
+    "b":
+    {
+      "item": "cac:burner"
+    },
+    "c":
+    {
+      "item": "cac:potion_cage"
+    },
+    "s":
+    {
+      "item": "minecraft:stone"
+    }
+  },
+  "result":
+  {
+    "item": "cac:basic_brewing_stand",
+    "count": 1
+  }
+}

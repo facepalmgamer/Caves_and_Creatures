@@ -50,5 +50,4 @@ public class Main
             return new ItemStack(ItemHandler.OBLIVION_ORB.get());
         }
     };
-
 }

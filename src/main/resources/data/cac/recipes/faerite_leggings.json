@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "fff",
+    "f f",
+    "f f"
+  ],
+  "key":
+  {
+    "f":
+    {
+      "item": "cac:faerite_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "cac:faerite_leggings",
+    "count": 1
+  }
+}
