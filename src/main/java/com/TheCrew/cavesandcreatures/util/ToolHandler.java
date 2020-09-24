@@ -1,8 +1,8 @@
 package com.TheCrew.cavesandcreatures.util;
 
 import com.TheCrew.cavesandcreatures.Main;
-import com.TheCrew.cavesandcreatures.armor.ModArmorMaterial;
-import com.TheCrew.cavesandcreatures.tools.ModItemTier;
+import com.TheCrew.cavesandcreatures.enums.ModArmorMaterial;
+import com.TheCrew.cavesandcreatures.enums.ModItemTier;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;

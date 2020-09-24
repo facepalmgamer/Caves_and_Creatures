@@ -1,4 +1,4 @@
-package com.TheCrew.cavesandcreatures.tools;
+package com.TheCrew.cavesandcreatures.enums;
 
 import com.TheCrew.cavesandcreatures.util.ItemHandler;
 import net.minecraft.item.IItemTier;
