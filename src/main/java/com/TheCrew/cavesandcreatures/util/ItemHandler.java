@@ -23,5 +23,9 @@ public class ItemHandler {
     public static final RegistryObject<Item> FEYWILD_RUNE = ITEMS.register("feywild_rune", ()->new Item(new Item.Properties().group(Main.TAB)));
     public static final RegistryObject<Item> BURNER = ITEMS.register("burner", ()->new Item(new Item.Properties().group(Main.TAB)));
     public static final RegistryObject<Item> POTION_CAGE = ITEMS.register("potion_cage", ()->new Item(new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> HIDE = ITEMS.register("hide", ()->new Item(new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> SILK_BUNDLE = ITEMS.register("silk_bundle", ()->new Item(new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> SIP_BOTTLE = ITEMS.register("sip_bottle", ()->new Item(new Item.Properties().group(Main.TAB)));
+    public static final RegistryObject<Item> SIP_WATER_BOTTLE = ITEMS.register("sip_water_bottle", ()->new Item(new Item.Properties().group(Main.TAB)));
 
 }
