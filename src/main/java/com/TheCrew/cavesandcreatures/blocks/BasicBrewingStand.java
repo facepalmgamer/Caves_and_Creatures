@@ -139,7 +139,7 @@ public class BasicBrewingStand extends Block {
 
     @Override
     public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos) {
-        return .4f;
+        return .8f;
     }
 }
 
